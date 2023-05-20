@@ -9,7 +9,7 @@ export const onRequest: PagesFunction = (context) => mailChannelsPlugin({
     from: { name: "Contact Us Form Inquiry", email: `${context.env.SENDER_EMAIL}` },
     respondWith: () => {
         return new Response(
-            `Thank you for submitting your inquiry. A member of the team will be in touch shortly.`
+            `Gracias por enviarnos su consulta. Un miembro del equipo se pondrá en contacto con usted en breve..`
         );
     },
 })(context);
